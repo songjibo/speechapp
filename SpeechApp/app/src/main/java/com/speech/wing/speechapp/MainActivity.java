@@ -35,6 +35,7 @@ import se.talkamatic.frontend.TdmConnector;
 import se.talkamatic.frontend.asr.AsrListenerAdapter;
 import se.talkamatic.frontend.asr.AsrRecognitionHypothesis;
 import se.talkamatic.frontend.asr.IAsrListener;
+import se.talkamatic.frontend.integration.iflytek.IFlytekAsr;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -64,7 +65,12 @@ public class MainActivity extends AppCompatActivity {
         final Context AppContext=getApplicationContext();
         tdmConn=TdmConnector.createTdmConnector(AppContext);
         tdmConn.setLanguage(Language.CHINESE);
-
+        // This if-statement is here to show how to use the
+        // iFlyTek ASR integration in tdmIFlyTekIntegration-development-debug.aar
+        boolean USE_IFLYTEK = false;
+        if(USE_IFLYTEK) {
+            tdmConn.setExternalAsrBrand(IFlytekAsr.class.getName());
+        }
         MainHandler=new Handler(AppContext.getMainLooper());
 
         SpeechList=new ArrayList<String>();
@@ -229,7 +235,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSelectedRecognition(String s) {
-                Log.d("eventListener", "onSystemUtteranceToSpeak(" + s + ")");
+                Log.d("eventListener", "onSelectedRecognition(" + s + ")");
+                SpeechList.add(s);
+            }
+
+            @Override
+            public void onActiveDddChanged(String s, String s1) {
+                Log.d("eventListener", "onActiveDddChanged(" + s + ", " + s1 + ")");
                 SpeechList.add(s);
             }
         };

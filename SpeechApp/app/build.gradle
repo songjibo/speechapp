@@ -25,6 +25,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile files('libs/Msc.jar')
     compile(name:'tdmfrontend-development-debug',ext:'aar')
+    compile(name:'tdmIFlyTekIntegration-development-debug',ext:'aar')
 }
 
 repositories{
