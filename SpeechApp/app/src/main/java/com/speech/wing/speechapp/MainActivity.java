@@ -79,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
         SpeakingStatusListener();
         SpeechEventListener();
 
+        mAdapter=new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1,SpeechList);
+        mListView.setAdapter(mAdapter);
+
         BtnConn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -180,7 +183,11 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onResults(List<AsrRecognitionHypothesis> list) {
-
+               if (!list.isEmpty()){
+                 SpeechList.add(list.get(0).getRecognition());
+                 mAdapter.notifyDataSetChanged();
+                 mListView.setSelection(mAdapter.getCount()-1);
+               }
             }
 
             @Override
@@ -207,36 +214,48 @@ public class MainActivity extends AppCompatActivity {
             public void onAction(String s, String s1, Map<String, String> map) {
                 Log.d("eventListener", "onPerformAction(DDD: " + s + ", name: " + s1 + ", args: " + map + ")");
                 SpeechList.add(s + ": " + map.toString());
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
             public void onWhQuery(String s, String s1, Map<String, String> map) {
                 Log.d("eventListener", "onPerformWHQuery(DDD: " + s + ", name: " + s1 + ", args: " + map + ")");
                 SpeechList.add(s + ": " + map.toString());
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
             public void onValidity(String s, String s1, Map<String, String> map) {
                 Log.d("eventListener", "onPerformValidity(DDD: " + s + ", name: " + s1 + ", args: " + map + ")");
                 SpeechList.add(s + ": " + map.toString());
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
             public void onEntityRecognizer(String s, String s1, Map<String, String> map) {
                 Log.d("eventListener", "onPerformEntityRecognition(DDD: " + s + ", name: " + s1 + ", args: " + map + ")");
                 SpeechList.add(s + ": " + map.toString());
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
             public void onSystemUtteranceToSpeak(String s) {
                 Log.d("eventListener", "onSystemUtteranceToSpeak(" + s + ")");
                 SpeechList.add(s);
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
             public void onSelectedRecognition(String s) {
                 Log.d("eventListener", "onSelectedRecognition(" + s + ")");
                 SpeechList.add(s);
+                mAdapter.notifyDataSetChanged();
+                mListView.setSelection(mAdapter.getCount()-1);
             }
 
             @Override
@@ -246,7 +265,5 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         tdmConn.registerEventListener(eventListener);
-        mAdapter=new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1,SpeechList);
-        mListView.setAdapter(mAdapter);
     };
 }

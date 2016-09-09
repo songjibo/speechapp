@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tdmIFlyTekIntegration-development-debug-">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/tdmIFlyTekIntegration-development-debug/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/tdmIFlyTekIntegration-development-debug/jars/libs/Msc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/tdmIFlyTekIntegration-development-debug/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
