@@ -9,12 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80298321-6f47-41dc-aa34-bdeca16aeee7" name="Default" comment="new vesion">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tdmIFlyTekIntegration_development_debug_.xml" />
+    <list default="true" id="80298321-6f47-41dc-aa34-bdeca16aeee7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/speech/wing/speechapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/speech/wing/speechapp/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="SpeechApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,35 +32,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/speech/wing/speechapp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="186" column="48" selection-start-line="186" selection-start-column="48" selection-end-line="186" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.7150997">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="true" />
-                <element signature="method#onPartialResults#0;class#5215:6526" expanded="true" />
-                <element signature="method#onBufferReceived#0;class#5215:6526" expanded="true" />
+                <element signature="method#SpeakingStatusListener#0;class#MainActivity#0" expanded="true" />
+                <element signature="method#onResults#0;class#5214:6525" expanded="true" />
+                <element signature="method#onPartialResults#0;class#5214:6525" expanded="true" />
+                <element signature="method#onBufferReceived#0;class#5214:6525" expanded="true" />
                 <element signature="method#SpeechEventListener#0;class#MainActivity#0" expanded="true" />
-                <element signature="method#onShowPopup#0;class#6683:9408" expanded="true" />
-                <element signature="method#onAction#0;class#6683:9408" expanded="true" />
-                <element signature="method#onWhQuery#0;class#6683:9408" expanded="true" />
-                <element signature="method#onValidity#0;class#6683:9408" expanded="true" />
-                <element signature="method#onEntityRecognizer#0;class#6683:9408" expanded="true" />
-                <element signature="method#onSystemUtteranceToSpeak#0;class#6683:9408" expanded="true" />
-                <element signature="method#onSelectedRecognition#0;class#6683:9408" expanded="true" />
+                <element signature="method#onShowPopup#0;class#6682:9407" expanded="true" />
+                <element signature="method#onAction#0;class#6682:9407" expanded="true" />
+                <element signature="method#onWhQuery#0;class#6682:9407" expanded="true" />
+                <element signature="method#onValidity#0;class#6682:9407" expanded="true" />
+                <element signature="method#onEntityRecognizer#0;class#6682:9407" expanded="true" />
+                <element signature="method#onSystemUtteranceToSpeak#0;class#6682:9407" expanded="true" />
+                <element signature="method#onSelectedRecognition#0;class#6682:9407" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tdmIFlyTekIntegration_development_debug_.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/tdmIFlyTekIntegration_development_debug_.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1849,7 +1837,7 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="android.sdk.path" value="D:/Users/WING/AppData/Local/Android/sdk" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="040BBG39CEDR" />
+    <property name="device.picker.selection" value="U4ZLVWLFSOLRKR85" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2022,6 +2010,13 @@
       <option name="number" value="Default" />
       <updated>1470908792345</updated>
     </task>
+    <task id="LOCAL-00001" summary="new vesion">
+      <created>1473388598212</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1473388598212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2086,17 +2081,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="true" />
-            <element signature="method#onPartialResults#0;class#5215:6526" expanded="true" />
-            <element signature="method#onBufferReceived#0;class#5215:6526" expanded="true" />
+            <element signature="method#SpeakingStatusListener#0;class#MainActivity#0" expanded="true" />
+            <element signature="method#onResults#0;class#5214:6525" expanded="true" />
+            <element signature="method#onPartialResults#0;class#5214:6525" expanded="true" />
+            <element signature="method#onBufferReceived#0;class#5214:6525" expanded="true" />
             <element signature="method#SpeechEventListener#0;class#MainActivity#0" expanded="true" />
-            <element signature="method#onShowPopup#0;class#6683:9408" expanded="true" />
-            <element signature="method#onAction#0;class#6683:9408" expanded="true" />
-            <element signature="method#onWhQuery#0;class#6683:9408" expanded="true" />
-            <element signature="method#onValidity#0;class#6683:9408" expanded="true" />
-            <element signature="method#onEntityRecognizer#0;class#6683:9408" expanded="true" />
-            <element signature="method#onSystemUtteranceToSpeak#0;class#6683:9408" expanded="true" />
-            <element signature="method#onSelectedRecognition#0;class#6683:9408" expanded="true" />
+            <element signature="method#onShowPopup#0;class#6682:9407" expanded="true" />
+            <element signature="method#onAction#0;class#6682:9407" expanded="true" />
+            <element signature="method#onWhQuery#0;class#6682:9407" expanded="true" />
+            <element signature="method#onValidity#0;class#6682:9407" expanded="true" />
+            <element signature="method#onEntityRecognizer#0;class#6682:9407" expanded="true" />
+            <element signature="method#onSystemUtteranceToSpeak#0;class#6682:9407" expanded="true" />
+            <element signature="method#onSelectedRecognition#0;class#6682:9407" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2112,32 +2108,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/speech/wing/speechapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="48" selection-start-line="186" selection-start-column="48" selection-end-line="186" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="true" />
-            <element signature="method#onPartialResults#0;class#5215:6526" expanded="true" />
-            <element signature="method#onBufferReceived#0;class#5215:6526" expanded="true" />
-            <element signature="method#SpeechEventListener#0;class#MainActivity#0" expanded="true" />
-            <element signature="method#onShowPopup#0;class#6683:9408" expanded="true" />
-            <element signature="method#onAction#0;class#6683:9408" expanded="true" />
-            <element signature="method#onWhQuery#0;class#6683:9408" expanded="true" />
-            <element signature="method#onValidity#0;class#6683:9408" expanded="true" />
-            <element signature="method#onEntityRecognizer#0;class#6683:9408" expanded="true" />
-            <element signature="method#onSystemUtteranceToSpeak#0;class#6683:9408" expanded="true" />
-            <element signature="method#onSelectedRecognition#0;class#6683:9408" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/tdmIFlyTekIntegration_development_debug_.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/speech/wing/speechapp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7150997">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SpeakingStatusListener#0;class#MainActivity#0" expanded="true" />
+            <element signature="method#onResults#0;class#5214:6525" expanded="true" />
+            <element signature="method#onPartialResults#0;class#5214:6525" expanded="true" />
+            <element signature="method#onBufferReceived#0;class#5214:6525" expanded="true" />
+            <element signature="method#SpeechEventListener#0;class#MainActivity#0" expanded="true" />
+            <element signature="method#onShowPopup#0;class#6682:9407" expanded="true" />
+            <element signature="method#onAction#0;class#6682:9407" expanded="true" />
+            <element signature="method#onWhQuery#0;class#6682:9407" expanded="true" />
+            <element signature="method#onValidity#0;class#6682:9407" expanded="true" />
+            <element signature="method#onEntityRecognizer#0;class#6682:9407" expanded="true" />
+            <element signature="method#onSystemUtteranceToSpeak#0;class#6682:9407" expanded="true" />
+            <element signature="method#onSelectedRecognition#0;class#6682:9407" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         tdmConn.setLanguage(Language.CHINESE);
         // This if-statement is here to show how to use the
         // iFlyTek ASR integration in tdmIFlyTekIntegration-development-debug.aar
-        boolean USE_IFLYTEK = false;
+        boolean USE_IFLYTEK = true;
         if(USE_IFLYTEK) {
             tdmConn.setExternalAsrBrand(IFlytekAsr.class.getName());
         }
